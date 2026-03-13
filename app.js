@@ -17,3 +17,13 @@ async function getCharacterPage(url) {
 }
 
 
+async function main() {
+  try {
+    const characters = getCharacterPage(
+      "https://rickandmortyapi.com/api/character",
+    );
+    console.log(characters);
+  } catch (error) {}
+}
+
+main();
